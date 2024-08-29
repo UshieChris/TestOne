@@ -22,7 +22,7 @@
     "yarn": "^1.22.22"
   },
   "scripts": {
-    "build": "npm install --legacy-peer-deps",
+    "build": "npm install --force",
     "start": "react-scripts start",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
