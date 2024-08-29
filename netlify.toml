@@ -1,7 +1,7 @@
 [build]
-  publish = "build"  # Adjust this to your build output directory
-  command = "npm install --legacy-peer-deps"
-  base = "/"
+  publish = "build"  # Make sure this matches your actual build output directory
+  command = "npm install --legacy-peer-deps && npm run build"
+  base = "/"  # This is usually the root directory, adjust if necessary
 
 [context.production]
-  branch = "chris"
+  branch = "chris"  # Ensure this branch exists and is the correct branch name
