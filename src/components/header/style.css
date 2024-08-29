@@ -1,0 +1,35 @@
+.header {
+  border-bottom: 1px solid #e8e8e8;
+  background: #fff;
+  @apply flex 
+    flex-row justify-between 
+    items-center 
+    px-6 py-[19px] w-full;
+}
+.page-title {
+  color: var(#1f2126);
+  /* font-feature-settings: 'clig' off, 'liga' off; */
+  /* font-family: Averta; */
+  /* font-size: 20px; */
+  /* font-style: bold; */
+  /* font-weight: 700; */
+  /*line-height: 32px;*/ /* 160% */
+  @apply text-[20px] leading-8 font-bold;
+}
+.name-icon {
+  @apply font-normal
+    rounded-full
+    m-auto p-2;
+}
+.name {
+  font-size: 16px;
+  font-family: "Averta";
+}
+.email-box {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: "...";
+  font-size: 12px;
+  font-family: "Averta";
+  @apply max-w-[200px] w-full;
+}

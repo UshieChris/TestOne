@@ -1,0 +1,458 @@
+// // .App {
+// //   text-align: center;
+// // }
+
+
+// // .ant-modal-close {
+// //   top: -10px;
+// //   right: 10px;
+// // }
+
+// .ant-modal-content {
+//   z-index: 100 !important;
+// }
+
+// .ant-body {
+//   padding: 36px;
+// }
+
+// .ant-modal-body {
+//   display: -webkit-box;
+//   display: -ms-flexbox;
+//   display: flex;
+//   -webkit-box-align: center;
+//   -ms-flex-align: center;
+//   align-items: center;
+// }
+
+// #modalContainer {
+//   .buttons-container {
+//     margin-top: 24px;
+//     -webkit-box-pack: center;
+//     -ms-flex-pack: center;
+//     justify-content: center;
+
+//     .custom-button {
+//       margin: 0;
+
+//       &:first-of-type {
+//         margin-right: 24px;
+//       }
+//     }
+//   }
+
+//   .textarea {
+//     margin-top: 12px;
+//     width: 100%;
+//     height: 132px;
+
+//     .MuiOutlinedInput-multiline {
+//       width: 100%;
+//       height: 100%;
+
+//       .MuiOutlinedInput-inputMultiline {
+//         height: 100% !important;
+//       }
+//     }
+
+//     label {
+//       color: var(--schemeCardText);
+//     }
+
+//     .MuiFormLabel-root.Mui-focused {
+//       color: blue;
+//     }
+
+//     .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+//       border: 1px solid blue;
+//     }
+
+//     // .MuiOutlinedInput-notchedOutline {
+//     //   border-color: var(--auditsBtnBorder);
+//     //   background: var(--inputBg);
+//     // }
+
+//     textarea {
+//       color: black;
+//       z-index: 2;
+//     }
+//   }
+
+//   .bold {
+//     font-weight: bolder;
+//   }
+
+//   .view-decal {
+//     color: var(--black);
+
+//     .images-container {
+//       img {
+//         width: calc(50% - 6px);
+//         height: 157px;
+//         margin-bottom: 12px;
+
+//         &:nth-child(odd) {
+//           margin-right: 12px;
+//         }
+//       }
+//     }
+
+//     .ant-modal-body {
+//       display: -webkit-box;
+//       display: -ms-flexbox;
+//       display: flex;
+//       -webkit-box-orient: vertical;
+//       -webkit-box-direction: normal;
+//       -ms-flex-direction: column;
+//       flex-direction: column;
+//       -webkit-box-align: start;
+//       -ms-flex-align: start;
+//       align-items: flex-start;
+//     }
+
+//     .buttons-container {
+//       width: 100%;
+
+//       .custom-button {
+//         background: white;
+//         border: 1px solid grey;
+//         min-width: 100px;
+//         max-width: 100px;
+//       }
+//     }
+
+//     .link-color {
+//       color: blue;
+//     }
+//   }
+
+//   .delete-confirmation-modal {
+//     .buttons-container {
+//       width: 100%;
+
+//       .custom-button {
+//         background: white;
+//         border: 1px solid grey;
+//         min-width: 100px;
+//         max-width: 100px;
+
+//         &:last-of-type {
+//           background: blue;
+//           border-color: blue;
+//         }
+//       }
+//     }
+
+//     .users-list {
+//       max-height: 150px;
+//       overflow-y: scroll;
+     
+//     }
+//   }
+
+//   .approve-confirmation-modal,
+//   .reject-confirmation-modal {
+//     .ant-modal-close {
+//       height: 1rem;
+//     }
+//     svg {
+//       width: 1rem;
+//       path {
+//         fill: grey;
+//       }
+//     }
+//     .custom-button {
+//       background: white;
+//       border: 1px solid grey;
+//       min-width: 100px;
+//       max-width: 100px;
+//       color: grey;
+//     }
+//   }
+
+//   .approve-confirmation-modal {
+//     .custom-button {
+//       &:last-of-type {
+//         background: green;
+//         border-color: green;
+//         color: white;
+//       }
+//     }
+//   }
+//   .reject-confirmation-modal {
+//     .custom-button {
+//       &:last-of-type {
+//         background: red;
+//         border-color: red;
+//         color: white;
+//       }
+//     }
+//   }
+
+//   small,
+//   p {
+//     color: black
+//   }
+// }
+
+// .dark {
+//   #modalContainer {
+//     .drag-drop-input {
+//       color: white;
+
+//       svg {
+//         path {
+//           fill: white;
+//           fill-opacity: 1;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// .md-cont {
+//   position: relative;
+//   z-index: 1000;
+// }
+
+
+
+// // .request-settings-page {
+// //   .btn-section {
+// //     display: flex;
+// //     column-gap: 10px;
+// //     flex: 1;
+// //     align-items: center;
+// //     justify-content: flex-end;
+
+// //     .sign-btn {
+// //       display: flex;
+// //       width: 200px;
+// //       background-color: #fff;
+// //       border: 1px solid #0275d8;
+// //       align-items: center;
+// //       justify-content: center;
+// //       color: #0275d8;
+// //       font-size: 14.6px;
+// //     }
+// //     .request-btn {
+// //       display: flex;
+// //       width: 200px;
+// //       background-color: #0275d8;
+// //       border: 1px solid #0275d8;
+// //       align-items: center;
+// //       justify-content: center;
+// //       color: #fff;
+// //       font-size: 14.6px;
+// //     }
+// //   }
+
+// //   // .btn-section {
+// //   //   display: flex;
+// //   //   flex: 1;
+// //   //   align-items: center;
+// //   //   justify-content: flex-end;
+
+// //   // }
+
+// //   div .title-section {
+// //     display: flex;
+// //     align-items: center;
+// //     margin-bottom: 15px;
+// //     cursor: pointer;
+
+// //     .title {
+// //       color: #0275d8;
+// //       font-size: 20px;
+// //       font-weight: normal !important;
+// //     }
+// //   }
+
+// //   .title {
+// //     color: #0275d8;
+// //     font-size: 24px;
+// //   }
+
+// //   #createUser {
+// //     max-width: 100%;
+// //   }
+
+// //   .top-section {
+// //     @extend %topSectionStyles;
+// //   }
+
+// //   .tab-1 {
+// //     .ant-tabs-tab-active {
+// //       color: $indicator-green;
+
+// //       svg {
+// //         g > path {
+// //           fill: $white;
+// //         }
+
+// //         circle {
+// //           fill-opacity: 1;
+// //           fill: $indicator-green !important;
+// //         }
+// //       }
+// //     }
+
+// //     .ant-tabs-ink-bar {
+// //       background: $indicator-green;
+// //     }
+// //   }
+
+// //   .tab-0 {
+// //     .ant-tabs-tab-active {
+// //       color: $red;
+
+// //       svg > g > path {
+// //         fill: $red !important;
+// //       }
+// //     }
+
+// //     .ant-tabs-ink-bar {
+// //       background: $red;
+// //     }
+// //   }
+
+// //   .table-header {
+// //     ul {
+// //       li {
+// //         color: #353f50;
+// //         &:nth-of-type(1),
+// //         &:nth-of-type(2) {
+// //           width: 28%;
+// //         }
+
+// //         &:nth-of-type(3) {
+// //           width: 24%;
+// //         }
+
+// //         &:nth-of-type(4) {
+// //           width: 16%;
+// //         }
+
+// //         &:last-of-type {
+// //           width: 4%;
+// //         }
+// //       }
+// //     }
+// //   }
+
+// //   .table-body {
+// //     li {
+// //       width: 100%;
+// //       padding: 24px 23px;
+// //       border-bottom: 1px solid $grey;
+
+// //       &:last-of-type {
+// //         border: none;
+// //       }
+
+// //       span {
+// //         color: #353f50;
+// //         &:nth-of-type(1),
+// //         &:nth-of-type(2) {
+// //           width: 28%;
+// //         }
+
+// //         &:nth-of-type(3) {
+// //           width: 24%;
+// //         }
+
+// //         &:nth-of-type(4) {
+// //           width: 16%;
+// //         }
+
+// //         &:last-of-type {
+// //           width: 4%;
+// //         }
+// //       }
+// //     }
+// //   }
+
+// //   .add-button-container {
+// //     // max-width: 385px;
+// //     -webkit-box-pack: justify;
+// //     -ms-flex-pack: justify;
+// //     // justify-content: space-between;
+// //     width: 100%;
+// //     margin-left: auto;
+
+// //     .custom-button {
+// //       // width: 255px;
+// //       border-top-right-radius: 0 !important;
+// //       border-bottom-right-radius: 0 !important;
+
+// //       &.batch-btn {
+// //         background: $white;
+// //         width: 100px;
+
+// //         &.enable {
+// //           color: $indicator-green;
+// //         }
+
+// //         &.disable {
+// //           color: $red;
+// //         }
+
+// //         &:disabled {
+// //           background: rgba($dark-grey, 0.2);
+// //           color: rgba($dark-grey, 0.5);
+// //         }
+// //       }
+// //     }
+
+// //     @media screen and (max-width: 425px) {
+// //       -webkit-box-orient: vertical;
+// //       -webkit-box-direction: normal;
+// //       -ms-flex-direction: column;
+// //       flex-direction: column;
+
+// //       .custom-button {
+// //         min-width: 100%;
+
+// //         &:last-of-type {
+// //           margin-top: 12px;
+// //         }
+// //       }
+// //     }
+// //   }
+
+// //   .downIcon-div {
+// //     cursor: pointer;
+// //     display: flex;
+// //     border: 1px solid #0275d8;
+// //     box-sizing: border-box;
+// //     border-top-right-radius: 4px;
+// //     border-bottom-right-radius: 4px;
+// //     text-align: center;
+// //     color: #0275d8;
+// //     background-color: #ebf8fe;
+// //     padding-left: 5px;
+// //     padding-right: 5px;
+// //     // width: inherit;
+// //   }
+
+// //   .downIcon-text {
+// //     font-weight: 600;
+// //     font-size: 16px;
+// //     line-height: 20px;
+// //     margin-right: 1rem;
+// //     margin-left: 1rem;
+// //   }
+
+// //   .downIcon-position-1 {
+// //     padding-top: 8px;
+// //   }
+
+// //   .downIcon-position-2 {
+// //     padding-top: 11px;
+// //   }
+
+// //   .downIcon-position-3 {
+// //     padding-top: 14px;
+// //   }
+// // }

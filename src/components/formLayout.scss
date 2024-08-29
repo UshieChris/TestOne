@@ -1,0 +1,674 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif !important;
+  -webkit-transition: background 1s ease;
+  transition: background 1s ease;
+}
+
+p,
+h1,
+h2,
+h3,
+span,
+small,
+li,
+a {
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+
+form {
+  width: 100%;
+}
+html,
+body {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+.add-script-modal {
+  margin: 0 !important;
+  position: unset !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  .ant-modal-body {
+    height: 100vh !important;
+    display: block;
+  }
+  .vmmr-page {
+    width: 100%;
+    .bank-modal-header {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      padding-left: 38px;
+      padding-right: 38px;
+      padding-bottom: 10px;
+      // background-color: "#E1E6ED" ;
+    }
+    .bank-modal-Label {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 32px;
+      color: #353f50;
+    }
+    .bank-modal-Label-small {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      padding-left: 42px;
+      background-color: #e1e6ed;
+      height: 40px;
+      padding-top: 8px;
+    }
+    .bank-modal-form-container {
+      margin-top: 50px;
+    }
+  }
+  .drag-drop-input {
+    cursor: pointer;
+  }
+}
+.space {
+  width: 2em;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 2em;
+}
+
+.custom-button {
+  background: #4615b2;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 6px;
+  width: 100%;
+  cursor: pointer;
+  padding: 0 12px;
+  height: 50px;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  span {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+
+  &.asIcon {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: auto;
+  }
+
+  &.no-bg {
+    background: unset;
+    padding: 0;
+    margin: 0;
+  }
+
+  &.bg-red {
+    background: red;
+    color: white;
+  }
+
+  &.light-blue {
+    background: #00b8de;
+  }
+}
+
+.custom-input {
+    outline: none;
+    height: 50px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    padding: 0 12px;
+    height: 50p;
+  
+  
+    .MuiFormLabel-root.Mui-error {
+      
+    }
+  
+    &.MuiFormControl-marginNormal {
+      margin-bottom: 10px;
+    }
+  
+    .MuiFilledInput-root.Mui-focused {
+      background: transparent;
+    }
+  
+    .MuiFilledInput-input {
+      padding-top: 22px;
+    }
+  
+    .MuiFormLabel-root {
+      background: transparent;
+      margin-top: -4px;
+      text-transform: capitalize;
+  
+      &.Mui-focused {
+        background: transparent;
+     
+      }
+    }
+  
+    .MuiInputBase-root {
+  
+      background: transparent;
+      font-size: 16px;
+      height: inherit;
+  
+      &.Mui-focused {
+        .MuiOutlinedInput-notchedOutline {
+          border: 1px solid blue !important;
+        }
+      }
+    }
+  
+    .MuiFilledInput-root {
+      border-radius: 4px;
+  
+      &:hover {
+        background: transparent;
+      }
+    }
+  
+    .MuiFilledInput-underline {
+      &::before,
+      &:hover::before,
+      &::after {
+        border: none;
+      }
+    }
+  
+    &.error {
+      background: white;
+  
+      &.MuiFormControl-marginNormal {
+        margin-bottom: 0;
+      }
+  
+      .MuiInputBase-root.Mui-focused > .MuiOutlinedInput-notchedOutline {
+        border: 1px solid red !important;
+      }
+    }
+  }
+
+ .drag-drop-input {
+    max-height: 100px;
+    overflow-y: scroll;
+    width: 100%;
+    color: grey;
+    margin-top: 24px;
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px dashed rgba(#999, 0.9);
+    border-radius: 4px;
+
+    .placeholder {
+      padding: 24px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    //   flex-direction: column !important;
+      justify-content: center;
+      align-items: center;
+    
+    }
+
+    div:not(.placeholder) {
+      outline: none;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      .img-tg {
+        margin-left: auto;
+     }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    span {
+      font-weight: bold;
+      margin-right: 4px;
+      min-width: unset;
+    }
+
+    svg {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  }
+
+  .ts-tm {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+.custom-file-input {
+  outline: none;
+  height: 50px;
+  font-size: 16px;
+  font-family: "Source Sans Pro", sans-serif;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  text-transform: capitalize;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  input {
+    outline: none;
+    border: none;
+    position: absolute;
+    left: -10000000px;
+  }
+
+  label {
+    top: 0;
+    left: 0;
+    position: absolute;
+    font-size: 12px;
+    padding: 0 3px 0 8px;
+    -webkit-transform: translate(14px, 14px);
+    transform: translate(4px, 14px);
+    width: 100%;
+  }
+
+  &.form-input--is-active,
+  &.form-input--is-filled {
+    label {
+      width: 50px;
+      background: white;
+      -webkit-transform: translate(2px, -14px) scale(0.75);
+      transform: translate(2px, -14px) scale(0.75);
+    }
+
+    .file-name {
+      // position: absolute;
+      padding-left: 12px;
+      width: 100%;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
+  }
+
+  &.form-input--is-filled {
+    label {
+      width: 50px;
+      background: white;
+      -webkit-transform: translate(2px, -14px) scale(0.75);
+      transform: translate(2, -14px) scale(0.75);
+    }
+  }
+
+  &.form-input--is-active {
+    border-color: blue;
+
+    label {
+      color: blue;
+    }
+  }
+
+  &.error {
+    background: white;
+
+    &.MuiFormControl-marginNormal {
+      margin-bottom: 0;
+    }
+
+    .MuiInputBase-root.Mui-focused > .MuiOutlinedInput-notchedOutline {
+      border: 1px solid red !important;
+    }
+  }
+}
+
+
+.MuiFormHelperText-root {
+  margin-bottom: 24px !important;
+}
+
+.custom-input-cont {
+  .MuiFormControl-root {
+    .MuiFormLabel-root.Mui-disabled {
+      color: blue;
+    }
+  }
+
+  .MuiInputLabel-outlined.MuiInputLabel-shrink {
+    -webkit-transform: translate(14px, -9px) scale(0.85);
+    transform: translate(14px, -9px) scale(0.85);
+    background: white;
+    padding-right: 3px;
+  }
+}
+
+
+
+svg {
+  cursor: pointer;
+}
+
+.card-1 {
+  max-width: 400px;
+  margin-top: 24px;
+
+
+
+  &.no-mt {
+    &:first-child,
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 12px;
+    }
+
+    &:nth-child(even) {
+      margin-left: 12px;
+    }
+  }
+
+  &:not(.no-mt) {
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+  .text-content {
+    margin: 0 0 0 24px;
+  }
+}
+
+.card-2 {
+  max-width: 400px;
+  margin-top: 24px;
+
+  &.no-mt {
+    &:first-child,
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 12px;
+    }
+
+    &:nth-child(even) {
+      margin-left: 12px;
+    }
+  }
+
+  &:not(.no-mt) {
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+      margin-left: 0;
+    }
+  }
+
+  .text-content {
+    margin: 0 0 0 24px;
+  }
+}
+
+.ant-modal {
+  @media screen and (max-width: 425px) {
+    min-width: 280px !important;
+    width: unset !important;
+  }
+}
+
+.ant-modal-header {
+  border: none;
+  border-radius: 10px;
+
+  .ant-modal-title {
+    color: grey;
+    font-size: 25px;
+    line-height: 34px;
+  }
+}
+
+.ant-modal-body {
+  padding-top: 0;
+}
+
+.ant-modal-close-x {
+  width: 66px;
+  height: 66px;
+  line-height: 86px !important;
+
+  svg {
+    width: 30px;
+    height: 30px;
+ 
+  }
+}
+
+.horizontal-divider {
+  width: 100%;
+  height: 2px;
+  background: gray;
+  margin: 36px 0;
+}
+
+.ant-modal-content {
+  border-radius: 10px;
+}
+
+.ant-tabs-ink-bar {
+  z-index: 0;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 34px;
+}
+
+a:hover {
+  color: blue;
+}
+
+.ant-tabs {
+  padding: 0 !important;
+}
+
+
+.prev-btn {
+  margin: 0 0 0 12px;
+}
+
+.next-btn,
+.prev-btn {
+  height: 20px;
+
+  svg {
+    path {
+     
+    }
+  }
+}
+
+.ant-pagination-next,
+.ant-pagination-prev {
+  display: none;
+}
+
+.ant-notification {
+  margin-right: 16px;
+}
+
+.ant-spin-nested-loading {
+  width: 100%;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: 1px solid grey !important;
+  border-radius: 6px;
+}
+
+.password-input {
+  .MuiFormLabel-root.Mui-focused {
+
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border: 1px solid grey !important;
+    border-radius: 6px;
+  }
+
+  .Mui-focused.MuiOutlinedInput-root {
+    .MuiOutlinedInput-notchedOutline {
+
+    }
+  }
+
+  svg {
+    path {
+    
+    }
+  }
+}
+
+.status-green,
+.status-blue,
+.status-red,
+.status-orange {
+
+  text-transform: capitalize;
+}
+
+
+
+// end of file always
+
+.eye-svg,
+.edit-svg,
+.bin-svg {
+  width: 35px !important;
+  height: 35px;
+  min-width: unset !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 10px;
+  border-radius: 50%;
+
+}
+
+.bin-svg {
+  background: red;
+  margin-right: 0;
+
+  svg {
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+  }
+}
+
+
+.ant-spin-text {
+  text-shadow: none !important;
+}
+
+.isw-p {
+  color: var(--black);
+}
+
+input:-internal-autofill-selected {
+  background: unset !important;
+  color: unset !important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none !important;
+  -webkit-box-shadow: 0 0 0 30px rgba(0, 0, 0, 0) inset !important;
+  box-shadow: 0 0 0 30px rgba(0, 0, 0, 0) inset !important;
+  -webkit-transition: background-color 5000s ease-in-out 0s !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+
+}
+

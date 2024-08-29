@@ -1,0 +1,373 @@
+// @import "../variables";
+// @import "../mixins";
+
+.taskModal {
+  max-width: 526px;
+  width: 100% !important;
+  position: relative;
+  z-index: 1000;
+
+  .al-i-c{
+   
+    .ts-tm {
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+  }
+  
+
+
+ 
+  // background-color: black;
+  // z-index: 1050; /* Add this line to ensure the modal is on top */
+ 
+
+  .textfield-container {
+    width: 100%;
+  }
+
+  .dark {
+    .drag-drop-input {
+      color: 'black';
+
+      svg {
+        path {
+          fill: 'black';
+          fill-opacity: 1;
+        }
+      }
+    }
+  }
+
+  .drag-drop-input {
+    max-height: 140px;
+    overflow-y: scroll;
+    width: 100%;
+    color: 'grey';
+    margin-top: 24px;
+    font-size: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background: transparent;
+    border: 1px dashed rgba(#999, 0.9);
+    border-radius: 4px;
+
+    .placeholder {
+      padding: 24px 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+
+    div:not(.placeholder) {
+      outline: none;
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    span {
+      font-weight: bold;
+      margin-right: 4px;
+      min-width: unset;
+    }
+
+    svg {
+      margin-right: 12px;
+    }
+  }
+
+  .illustration-container {
+    // display: -webkit-box;
+    // display: -ms-flexbox;
+    width: 300px;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    p {
+      font-size: 14px;
+      color: 'grey';
+    }
+
+    margin-right: 48px;
+  }
+
+  // @media screen and (max-width: 700px) {
+  //   .illustration-container {
+  //     display: none;
+  //   }
+  // }
+
+  .cancel-btn {
+    background: none;
+    color: 'red';
+  }
+
+  .ant-modal-close {
+    top: -10px;
+    right: 10px;
+  }
+
+  .ant-modal-content {
+    z-index: 2000 !important; // Increase z-index if necessary
+  }
+
+  .ant-body {
+    padding: 36px;
+  }
+
+  .ant-modal-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .text-container {
+    padding-top: 48px;
+    text-align: center;
+    font-size: 18px;
+    color: 'blue';
+    width: 218px;
+    margin: 0 auto;
+  }
+
+  .custom-button {
+    width: 135px;
+    padding: 0;
+
+    &.left {
+      background: 'blue';
+      color: 'blue';
+    }
+    margin-left: auto;
+  }
+
+  // @extend %buttonsCont;
+}
+
+
+.ant-modal-close {
+  top: -10px;
+  right: 10px;
+}
+
+// .ant-modal-content {
+//   z-index: 100 !important;
+// }
+
+.ant-body {
+  padding: 36px;
+}
+
+.ant-modal-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#modalContainer {
+  .buttons-container {
+    margin-top: 24px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+
+    .custom-button {
+      margin: 0;
+
+      &:first-of-type {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  .textarea {
+    margin-top: 12px;
+    width: 100%;
+    height: 70px;
+
+    .MuiOutlinedInput-multiline {
+      width: 100%;
+      height: 100%;
+
+      .MuiOutlinedInput-inputMultiline {
+        height: 100% !important;
+      }
+    }
+
+    label {
+      color: var(--schemeCardText);
+    }
+
+    .MuiFormLabel-root.Mui-focused {
+      color: blue;
+    }
+
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+      border: 1px solid blue;
+    }
+
+    // .MuiOutlinedInput-notchedOutline {
+    //   border-color: var(--auditsBtnBorder);
+    //   background: var(--inputBg);
+    // }
+
+    textarea {
+      color: black;
+      z-index: 2;
+    }
+  }
+
+  .bold {
+    font-weight: bolder;
+  }
+
+  .view-decal {
+    color: var(--black);
+
+    .images-container {
+      img {
+        width: calc(50% - 6px);
+        height: 157px;
+        margin-bottom: 12px;
+
+        &:nth-child(odd) {
+          margin-right: 12px;
+        }
+      }
+    }
+
+    .ant-modal-body {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+    }
+
+    .buttons-container {
+      width: 100%;
+
+      .custom-button {
+        background: white;
+        border: 1px solid grey;
+        min-width: 100px;
+        max-width: 100px;
+      }
+    }
+
+    .link-color {
+      color: blue;
+    }
+  }
+
+  .delete-confirmation-modal {
+    .buttons-container {
+      width: 100%;
+
+      .custom-button {
+        background: white;
+        border: 1px solid grey;
+        min-width: 100px;
+        max-width: 100px;
+
+        &:last-of-type {
+          background: blue;
+          border-color: blue;
+        }
+      }
+    }
+
+    .users-list {
+      max-height: 150px;
+      overflow-y: scroll;
+     
+    }
+  }
+
+  .approve-confirmation-modal,
+  .reject-confirmation-modal {
+    .ant-modal-close {
+      height: 1rem;
+    }
+    svg {
+      width: 1rem;
+      path {
+        fill: grey;
+      }
+    }
+    .custom-button {
+      background: white;
+      border: 1px solid grey;
+      min-width: 100px;
+      max-width: 100px;
+      color: grey;
+    }
+  }
+
+  .approve-confirmation-modal {
+    .custom-button {
+      &:last-of-type {
+        background: green;
+        border-color: green;
+        color: white;
+      }
+    }
+  }
+  .reject-confirmation-modal {
+    .custom-button {
+      &:last-of-type {
+        background: red;
+        border-color: red;
+        color: white;
+      }
+    }
+  }
+
+  small,
+  p {
+    color: black
+  }
+}
+
+.ant-modal-close {
+  z-index: 2100; // Ensure it's above modal content
+}
+
+.ant-modal {
+  transition: none !important; // Disable transitions for debugging
+}

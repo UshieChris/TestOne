@@ -1,0 +1,100 @@
+.base-layout {
+  @apply w-full bg-white flex flex-row max-h-screen;
+}
+.page-load-text {
+  font-size: 16px;
+  @apply text-[#0275D8];
+}
+.page-body {
+  width: 100%;
+  display: block;
+  @apply max-h-screen;
+}
+.action-section {
+  @apply flex flex-row pt-6 flex-wrap
+  /* bg-red-300  */
+  w-auto;
+}
+.action-object {
+  @apply sm:w-fit h-fit flex-1 w-full
+  /* bg-green-400  */
+  flex flex-col;
+}
+.action-object-caption {
+  @apply w-full;
+  font-family: Averta;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+.body-section {
+  @apply pt-6 w-auto;
+}
+.table-section {
+  color: #353f50;
+  @apply overflow-x-auto;
+}
+.table-actions {
+  display: flex;
+  padding: 8px 8px;
+  align-items: flex-start;
+  gap: 4px;
+  align-self: stretch;
+  border-radius: 8px 8px 0px 0px;
+  border: 1px solid #e1e6ed;
+  @apply w-full flex-grow;
+}
+.table-action-header {
+  display: flex;
+  align-items: flex-start;
+  /* gap: 4px; */
+  flex: 1 0 0;
+}
+.table-action-item {
+  display: flex;
+  flex-direction: column;
+}
+.table-name {
+  color: var(--colour-neutral-neutral1000, #1f2126);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* header/H6 */
+  font-family: Averta;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 160% */
+}
+
+.cursor-pointer {
+  margin-top: 6px;
+  margin-left: 12px;
+}
+.table-description {
+  color: var(--colour-neutral-neutral700, #5f738c);
+  font-feature-settings: "clig" off, "liga" off;
+
+  /* body/large */
+  font-family: Averta;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+.table-container {
+  @apply w-full h-fit overflow-x-auto;
+}
+
+.MuiInputBase-input {
+  width: 240px;
+  height: 1rem;
+}
+
+@media (max-width: 800px) {
+  .table-container {
+    max-width: 800px;
+    overflow-x: scroll;
+  }
+}
