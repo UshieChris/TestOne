@@ -110,6 +110,7 @@ addItem = ({ title, description, date, priority, image }) => {
   addStatus = ({ status }) => {
     this.setState({ status });
   };
+  // agghs
 
   // shouldComponentUpdate(nextProps, nextState) {
   //   return nextState.openTaskModal !== this.state.openTaskModal;
