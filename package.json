@@ -18,12 +18,12 @@
     "react-router-dom": "^6.25.1",
     "react-scripts": "5.0.1",
     "sass": "^1.77.8",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yarn": "^1.22.22"
   },
   "scripts": {
-    "build": "npm install --legacy-peer-deps && npm run build",
+    "build": "npm install --legacy-peer-deps",
     "start": "react-scripts start",
-    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
