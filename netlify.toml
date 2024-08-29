@@ -1,6 +1,6 @@
 [build]
   publish = "build"  # Adjust this to your build output directory
-  command = "npm install --legacy-peer-deps && npm run build"
+  command = "npm install --force"
   base = "/"
 
 [context.production]
