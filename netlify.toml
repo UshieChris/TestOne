@@ -1,0 +1,7 @@
+[build]
+  publish = "build"  # Adjust this to your build output directory
+  command = "npm run build"  # Adjust this to your build command
+  base = "/"
+
+[context.production]
+  branch = "chris"
